@@ -1,0 +1,51 @@
+import java.lang.*;
+import java.util.Scanner;
+
+
+public class Esercizio
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Inserisci il primo numero:");
+		int primo= input.nextInt();
+		System.out.println("Inserisci il primo numero:");
+		int secondo= input.nextInt();
+		System.out.println("Inserisci il primo numero:");
+		int terzo = input.nextInt();
+		
+		int maggiore,minore;
+
+		if (primo>secondo)
+		{
+			maggiore=primo;
+			minore=secondo;
+			if (primo>terzo)
+			{
+				if(terzo>secondo)
+					minore=secondo;
+			}
+			else 
+			{
+				maggiore=terzo;
+			}
+		}
+		else
+		{
+			maggiore=secondo;
+			minore=primo;
+			if(secondo>terzo)
+			{
+				if(terzo>primo)
+					minore=primo;
+			}
+			else 
+				maggiore=terzo;
+		}
+	System.out.println("Il numero maggiore e':"+ primo+". Il numero minore è:"+secondo);
+	}
+
+}
+
+
