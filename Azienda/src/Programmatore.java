@@ -62,6 +62,21 @@ public class Programmatore extends Dipendente
         }
     }
 
+    public void stampaCertificazioni()
+    {
+        for (int x=0; x<linguaggiProg.length; x++)
+            if (linguaggiProg[x]!=null)
+                System.out.println(x+")"+ " "+ linguaggiProg[x]);
+    }
+
+    public void stampaLinguaggi()
+    {
+        for (int x=0; x<linguaggiProg.length; x++)
+            if (linguaggiProg[x]!=null)
+                System.out.println(x+")"+ " "+ linguaggiProg[x]);
+    }
+
+
     public void rimuoviLinguaggio(int indice)
     {
         if (linguaggiProg[indice]!= null) {
