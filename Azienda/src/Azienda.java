@@ -53,7 +53,7 @@ public class Azienda{
         for(int i=0; i<dipendenti.length; i++)
         {
             if (dipendenti[i]!=null)
-                System.out.println(dipendenti[i].toString());
+                System.out.println(i+")"+dipendenti[i].toString());
         }
     }
 

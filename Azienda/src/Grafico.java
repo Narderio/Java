@@ -16,7 +16,7 @@ public class Grafico extends Dipendente
 
     public String toString()
     {
-        String x="Nome:"+ super.getNome()+ "; Cognome:"+super.getCognome()+"; Stipendio:"+super.getStipendio()+"; Specializzazione:"+specializzazione;//ritorno le informazioni del grafico
+        String x="Nome:"+ super.getNome()+ "; Cognome:"+super.getCognome()+"; Stipendio:"+super.getStipendio()+"; Bonus: "+ bonus+ "; Specializzazione:"+specializzazione;//ritorno le informazioni del grafico
         return x;
     }
 
