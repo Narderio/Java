@@ -15,9 +15,10 @@ public class Dipendente
         this.stipendio=stipendio;
     }
 
+    @Override
     public String toString()
     {
-        String stringa="Nome"+ nome + ";Cognome:"+cognome+";Stipendio:"+stipendio;//ritorno le informazioni del dipendente
+        String stringa="Nome: "+ nome + "; Cognome: "+cognome+"; Stipendio: "+stipendio;//ritorno le informazioni del dipendente
         return stringa;
     }
 
@@ -31,7 +32,7 @@ public class Dipendente
         this.nome=nome;
     }
 
-    public void setCognome(String nome)
+    public void setCognome(String cognome)
     {
         this.cognome=cognome;
     }
@@ -55,6 +56,8 @@ public class Dipendente
     {
         return stipendio;
     }
+
+
 
 
 }

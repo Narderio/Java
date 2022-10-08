@@ -1,14 +1,15 @@
 public class Azienda{
     private String nome;
-    private Dipendente[] dipendenti = new Dipendente[30];
+    private Dipendente[] dipendenti;
 
     public Azienda() {
-        super();
+        dipendenti = new Dipendente[30];
     }
 
     public Azienda(String nome)
     {
         this.nome=nome;
+        dipendenti = new Dipendente[30];
     }
 
     public String getNome() {
@@ -19,8 +20,9 @@ public class Azienda{
         this.nome = nome;
     }
 
-    public Dipendente[] getDipendenti() {
-        return dipendenti;
+    public Dipendente getDipendente(int indice)
+    {
+        return dipendenti[indice];
     }
 
     public void setDipendenti(Dipendente[] dipendenti) {
@@ -48,9 +50,9 @@ public class Azienda{
 
     public void listaDipendenti()
     {
-        for(int i=0; i<dipendenti.length;i++)
+        for(int i=0; i<dipendenti.length; i++)
         {
-            if(dipendenti[i]!=null)
+            if (dipendenti[i]!=null)
                 System.out.println(dipendenti[i].toString());
         }
     }
