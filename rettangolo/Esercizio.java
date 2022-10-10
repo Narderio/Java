@@ -34,10 +34,7 @@ public class Esercizio
 				System.out.print(" ");
 			}
 			System.out.println("");
-
-
-
-					}
+		}
 
 	}
 
