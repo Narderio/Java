@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Azienda{
     private String nome;
     private Dipendente[] dipendenti;
