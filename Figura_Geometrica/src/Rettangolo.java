@@ -8,11 +8,18 @@ public class Rettangolo extends FiguraGeometrica{
     }
 
     public void calcolaArea() {
-        System.out.println("L'area del rettangolo misura:"+(larghezza*altezza));
+        if (this instanceof Quadrato)
+            System.out.println("L'area del quadrato misura:"+(larghezza*altezza));
+        else
+            System.out.println("L'area del rettangolo misura:"+(larghezza*altezza));
     }
 
     public void calcolaPerimetro(){
-        System.out.println("Il perimetro del rettangolo misura:"+(larghezza+altezza)*2);
+        if (this instanceof Quadrato)
+            System.out.println("Il perimetro del quadrato misura:"+(larghezza+altezza)*2);
+        else{
+            System.out.println("Il perimetro del rettangolo misura:"+ (larghezza+altezza)*2);
+        }
     }
 
     public void disegna(){

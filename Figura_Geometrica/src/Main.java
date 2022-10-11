@@ -1,6 +1,6 @@
 public class Main {
-    public static void main(String[] args) {
-        FiguraGeometrica c = new Circonferenza (10);
+    public static  void main(String[] args) {
+         FiguraGeometrica c = new Circonferenza (10);
         FiguraGeometrica r = new Rettangolo(6, 10);
         FiguraGeometrica q = new Quadrato(4);
         c.calcolaArea();
